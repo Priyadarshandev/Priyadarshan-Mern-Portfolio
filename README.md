@@ -25,22 +25,27 @@ The project follows a clean folder structure separating frontend and backend log
 
 ```text
 Portfolio-main/
-├── dist/                # Production build
-├── server/              # Backend (Express API)
-│   ├── .env             # Environment configuration
-│   └── index.js         # Backend entry point
-├── src/                 # Frontend source
-│   ├── assets/          # Images & static files
-│   ├── components/      # Reusable UI components
-│   ├── constants/       # Static data
-│   ├── hooks/           # Custom React hooks
-│   ├── styles/          # Global styling
-│   ├── App.jsx          # Root component
-│   └── main.jsx         # Application entry
-├── index.html
-├── vite.config.js
-├── tailwind.config.js
-└── postcss.config.js
+├── client/              # Frontend (React + Vite)
+│   ├── src/
+│   │   ├── assets/      # Images & static files
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Page-level components (Home, etc.)
+│   │   ├── hooks/       # Custom React hooks
+│   │   ├── utils/       # Helper functions
+│   │   ├── App.jsx      # Root component
+│   │   └── main.jsx     # Application entry
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+├── server/              # Backend (Node + Express)
+│   ├── config/          # Database & service configs
+│   ├── controllers/     # Business logic
+│   ├── models/          # Mongoose models
+│   ├── routes/          # Express routes
+│   ├── middleware/      # Auth & error handling
+│   ├── server.js        # Backend entry point
+│   └── package.json
+└── README.md
 ```
 
 ---
@@ -82,29 +87,20 @@ Portfolio-main/
    cd Portfolio-main
    ```
 
-2. **Install frontend dependencies:**
+2. **Setup Frontend:**
    ```bash
+   cd client
    npm install
+   npm run dev
    ```
 
-3. **Install backend dependencies:**
+3. **Setup Backend:**
    ```bash
    cd server
    npm install
+   # Add your .env file
+   npm run dev # or node server.js
    ```
-
-4. **Environment Configuration:**
-   Create a `.env` file inside the `server/` folder:
-   ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_secret_key
-   ```
-
-5. **Run the application:**
-   - **Frontend:** `npm run dev` (from root)
-   - **Backend:** `node index.js` (from server folder)
-
 ---
 
 ## Production Build

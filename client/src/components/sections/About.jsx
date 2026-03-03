@@ -15,7 +15,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center">
 
         {/* Simple Image Container */}
-        <motion.div {...fadeUp} className="relative aspect-square rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-xl border border-gray-100 dark:border-white/5 max-w-sm mx-auto lg:max-w-none">
+        <motion.div {...fadeUp} className="relative aspect-square rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-white/5 max-w-sm mx-auto lg:max-w-none">
           <img src={aboutImg} alt="Priyadarshan Kumar" className="w-full h-full object-cover" />
         </motion.div>
 

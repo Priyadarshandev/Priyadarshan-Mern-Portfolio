@@ -1,21 +1,13 @@
 import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-
-// Premium Components
 import Navbar from "./components/layout/Navbar";
-import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
-import Experience from "./components/sections/Experience";
-import TechStack from "./components/sections/TechStack";
-import Projects from "./components/sections/Projects";
-import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
+import Home from "./pages/Home";
 
 /**
- * Main App Container
- * Minimal, Professional React Portfolio
+ * Main App Entry Point
+ * Separated layout and pages for professional structure
  */
-
 const App = () => {
   const { scrollYProgress } = useScroll();
 
@@ -38,27 +30,7 @@ const App = () => {
       <Navbar />
 
       <main className="relative z-10">
-        <Hero />
-
-        <section id="about">
-          <About />
-        </section>
-
-        <section id="experience">
-          <Experience />
-        </section>
-
-        <section id="skills">
-          <TechStack />
-        </section>
-
-        <section id="projects">
-          <Projects />
-        </section>
-
-        <section id="contact">
-          <Contact />
-        </section>
+        <Home />
       </main>
 
       <Footer />
