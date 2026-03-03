@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+    --color-dark: #050507;
+    --color-accent: #4f46e5;
+    --bg-radial-gradient-dark: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, rgba(5, 5, 7, 1) 100%);
+}
+
+:root {
+    background-color: #ffffff;
+    color: #111111;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root.dark {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+body {
+    @apply transition-colors duration-300;
+}
+
+.animate-gradient-slow {
+    background-size: 200% auto;
+    animation: gradient 8s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection background */
+::selection {
+    background-color: #2563eb;
+    color: white;
+}
+
+.dark ::selection {
+    background-color: #3b82f6;
+    color: white;
+}

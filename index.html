@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Updated Realistic SEO -->
+  <title>PRIYADARSHAN.DEV | MERN Stack Developer</title>
+  <meta name="description"
+    content="Priyadarshan Kumar - MERN Stack Developer specializing in MongoDB, Express, React, and Node.js. Building scalable full-stack web applications.">
+  <meta name="keywords" content="MERN Stack Developer, React Developer, Node.js Developer, Full Stack Developer India">
+  <meta name="author" content="Priyadarshan Kumar">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Priyadarshan Kumar",
+      "jobTitle": "MERN Stack Developer",
+      "url": "https://priyadarshansingh.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bihar",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://github.com/Priyadarshandev",
+        "https://www.linkedin.com/in/priyadarshansingh24/",
+        "https://leetcode.com/u/vXZmBsuaP4/"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
