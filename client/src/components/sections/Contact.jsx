@@ -31,7 +31,7 @@ const Contact = () => {
         setStatus({ loading: true, success: null, error: null });
 
         try {
-            const response = await fetch('https://priyadarshan-mern-portfolio.onrender.com', {
+            const response = await fetch('https://priyadarshan-mern-portfolio.onrender.com/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
