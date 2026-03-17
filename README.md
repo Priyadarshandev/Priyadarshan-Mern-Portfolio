@@ -7,7 +7,7 @@ Building scalable, performance-focused full-stack web applications with clean ar
 
 ## Live Demo
 
-- **Portfolio:** [portfolio-sigma-orcin-50.vercel.app](https://portfolio-sigma-orcin-50.vercel.app)
+- **Portfolio:** [priyadarshan-dev-portfolio.vercel.app](https://priyadarshan-dev-portfolio.vercel.app/)
 - **GitHub:** [github.com/Priyadarshandev](https://github.com/Priyadarshandev)
 - **Email:** priyadarshanwork24@gmail.com
 
