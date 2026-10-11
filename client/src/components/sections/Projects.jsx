@@ -4,6 +4,7 @@ import { SiGithub } from 'react-icons/si';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { PROJECTS } from '../../constants/projects';
 
+
 const Projects = () => {
     return (
         <section id="projects" className="py-16 md:py-20 bg-[#f9fafb] dark:bg-[#0f172a] relative transition-colors duration-300">
