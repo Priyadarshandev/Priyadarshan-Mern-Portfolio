@@ -1,5 +1,14 @@
 export const PROJECTS = [
     {
+        title: 'Precision Measurement & Calibration Website',
+        problem: 'Industrial clients need a reliable way to explore calibration services, understand measurement capabilities, and contact a technical service provider.',
+        solution: 'Designed a professional, responsive website showcasing calibration services, measurement expertise, industry applications, and clear inquiry options to help businesses find the right technical solutions.',
+        tech: ['React', 'Tailwind CSS', 'Responsive UI', 'Animations', 'B2B WEBSITE'],
+        img: 'src/assets/img/1.jpg',
+        github: 'https://github.com/Priyadarshandev/micro-measurement-website',
+        demo: 'https://micro-measurement-website.vercel.app/'
+    },
+    {
         title: 'Workflow Management System',
         problem: 'Complex enterprise operations were difficult to track and manage manually.',
         solution: 'Developed a high-performance admin dashboard with role-based access and real-time tracking.',
