@@ -8,7 +8,18 @@ export const PROJECTS = [
         img: projectImage,
         github: 'https://github.com/Priyadarshandev/micro-measurement-website',
         demo: 'https://micro-measurement-website.vercel.app/'
-    },
+    }, 
+     {
+    title: "Interior Design & Architecture Website",
+    problem:
+      "Interior design businesses need a professional online presence to showcase their services, completed projects, and design expertise while making it easy for potential clients to get in touch.",
+    solution:
+      "Designed and developed a modern, responsive website concept featuring an elegant homepage, interior design services, project showcases, customer reviews, business contact details, and WhatsApp enquiry access. The design focuses on visual presentation, clear navigation, and helping potential customers enquire about services.",
+    tech: ["REACT", "JAVASCRIPT", "TAILWIND CSS", "RESPONSIVE UI"],
+    img: "https://images.unsplash.com/photo-1613685301594-d1cb93e37009?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    github: "https://github.com/Priyadarshandev/jagdamba-associates",
+    demo: "https://jagdamba-associates.vercel.app/",
+  },
     {
         title: 'Workflow Management System',
         problem: 'Complex enterprise operations were difficult to track and manage manually.',
